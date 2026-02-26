@@ -1,0 +1,22 @@
+export type IconName =
+  | 'menu' | 'x' | 'spark' | 'message' | 'eye' | 'send' | 'whatsapp' | 'linkedin' | 'github' | 'mail' | 'rocket'
+  | 'shield' | 'server' | 'plug' | 'layout' | 'up';
+
+export const ICONS: Record<IconName, string> = {
+  menu: `<svg viewBox="0 0 24 24" fill="none"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`,
+  x: `<svg viewBox="0 0 24 24" fill="none"><path d="M18 6 6 18M6 6l12 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`,
+  spark: `<svg viewBox="0 0 24 24" fill="none"><path d="M12 2l1.6 6.1L20 10l-6.4 1.9L12 18l-1.6-6.1L4 10l6.4-1.9L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>`,
+  message: `<svg viewBox="0 0 24 24" fill="none"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>`,
+  eye: `<svg viewBox="0 0 24 24" fill="none"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z" stroke="currentColor" stroke-width="2"/><path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" stroke="currentColor" stroke-width="2"/></svg>`,
+  send: `<svg viewBox="0 0 24 24" fill="none"><path d="M22 2 11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 2 15 22l-4-9-9-4 20-7Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>`,
+  whatsapp: `<svg viewBox="0 0 24 24" fill="none"><path d="M20 11.5a8 8 0 0 1-12.7 6.5L4 19l1-3.2A8 8 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M9.2 8.8c.2-.4.4-.4.7-.3l.8.4c.3.1.4.3.3.6l-.3 1c-.1.3 0 .6.2.8.6.8 1.4 1.4 2.2 1.8.2.1.5.1.7-.1l.8-.7c.2-.2.4-.2.6-.1l1 .5c.3.1.4.4.3.7-.4 1.3-1.7 1.5-2.6 1.2-2.6-.9-4.7-2.9-5.7-5.4-.3-.8-.2-2.1.7-2.4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  linkedin: `<svg viewBox="0 0 24 24" fill="none"><path d="M6.5 9.5V20M6.5 6.5h0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M10.5 20v-6.2c0-3.8 5-4.1 5 0V20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18.5 20V9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`,
+  github: `<svg viewBox="0 0 24 24" fill="none"><path d="M9 19c-4 1.5-4-2.5-5-3m10 6v-3.5c0-1 .1-1.4-.5-2 1.7-.2 3.5-.8 3.5-4a3.1 3.1 0 0 0-.9-2.2 2.9 2.9 0 0 0-.1-2.2s-.7-.2-2.3.9a8 8 0 0 0-4.2 0C7.9 5.6 7.2 5.8 7.2 5.8a2.9 2.9 0 0 0-.1 2.2A3.1 3.1 0 0 0 6.2 10c0 3.2 1.8 3.8 3.5 4-.5.5-.6 1-.5 2V22" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`,
+  mail: `<svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v12H4z" stroke="currentColor" stroke-width="2"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>`,
+  rocket: `<svg viewBox="0 0 24 24" fill="none"><path d="M5 14c-1 3 0 5 0 5s2 1 5 0l10-10c1-4-1-6-1-6s-2-2-6-1L5 14Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M14 6l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 17l-1 4 4-1" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>`,
+  shield: `<svg viewBox="0 0 24 24" fill="none"><path d="M12 2 20 6v6c0 5-3.5 9-8 10-4.5-1-8-5-8-10V6l8-4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>`,
+  server: `<svg viewBox="0 0 24 24" fill="none"><path d="M4 6h16v4H4zM4 14h16v4H4z" stroke="currentColor" stroke-width="2"/><path d="M7 8h0M7 16h0" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>`,
+  plug: `<svg viewBox="0 0 24 24" fill="none"><path d="M9 2v6M15 2v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M7 8h10v3a5 5 0 0 1-5 5H7V8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 16v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`,
+  layout: `<svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v16H4z" stroke="currentColor" stroke-width="2"/><path d="M4 9h16" stroke="currentColor" stroke-width="2"/><path d="M10 9v11" stroke="currentColor" stroke-width="2"/></svg>`,
+  up: `<svg viewBox="0 0 24 24" fill="none"><path d="m18 15-6-6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`
+};

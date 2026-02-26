@@ -1,0 +1,313 @@
+<div class="bg"></div>
+
+<header id="top" class="topbar">
+  <div class="container topbar__inner">
+    <a href="#top" class="brand" aria-label="Germano Consultancy">
+      <span class="brand__mark"><img src="assets/img/logo.png" alt="Germano Consultancy" /></span>
+      <span class="brand__text">
+        <span class="brand__name">Germano Consultancy</span>
+        <span class="brand__tagline">PJ • Tecnologia • Sistemas • Consultoria</span>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="Navegação">
+      <a class="nav__link" href="#servicos">Serviços</a>
+      <a class="nav__link" href="#entregas">Entregas</a>
+      <a class="nav__link" href="#projetos">Projetos</a>
+      <a class="nav__link" href="#planos">Planos</a>
+      <a class="nav__link nav__link--cta" href="#contato">Contato</a>
+    </nav>
+
+    <button class="iconbtn burger" type="button" aria-label="Abrir menu" (click)="openDrawer()">
+      <app-icon name="menu"></app-icon>
+    </button>
+  </div>
+
+  <div class="drawer" [class.is-open]="drawerOpen()" (click)="closeDrawer()">
+    <div class="drawer__panel" (click)="$event.stopPropagation()">
+      <div class="drawer__head">
+        <div class="drawer__title">Menu</div>
+        <button class="iconbtn" type="button" aria-label="Fechar" (click)="closeDrawer()">
+          <app-icon name="x"></app-icon>
+        </button>
+      </div>
+
+      <div class="drawer__links">
+        <a class="drawer__link" href="#servicos" (click)="closeDrawer()">Serviços</a>
+        <a class="drawer__link" href="#entregas" (click)="closeDrawer()">Entregas</a>
+        <a class="drawer__link" href="#projetos" (click)="closeDrawer()">Projetos</a>
+        <a class="drawer__link" href="#planos" (click)="closeDrawer()">Planos</a>
+        <a class="drawer__link" href="#contato" (click)="closeDrawer()">Contato</a>
+      </div>
+
+      <a class="btn btn--primary btn--full" href="#contato" (click)="closeDrawer()">
+        <app-icon name="spark"></app-icon>Solicitar proposta</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero__grid">
+    <div class="hero__copy" appReveal>
+      <div class="pill">
+        <span class="pill__dot" aria-hidden="true"></span>
+        Atuação PJ • Disponível para projetos (remoto / híbrido)
+      </div>
+
+      <h1 class="hero__title">
+        Desenvolvemos sistemas e sites sob medida <span class="grad">para sua empresa crescer com tecnologia confiável.</span>
+        Criamos soluções <span class="grad">rápidas, seguras e fáceis de manter</span> prontas para <span class="grad">escalar junto com o seu negócio.</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        APIs rápidas, integrações confiáveis e sites que convertem — com entregas previsíveis, documentação e foco em manutenção.
+      </p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary" href="#contato"><app-icon name="message"></app-icon> Quero um orçamento</a>
+        <a class="btn btn--ghost" href="#projetos"><app-icon name="eye"></app-icon> Ver projetos</a>
+      </div>
+
+      <div class="hero__kpis">
+        <div class="kpi" appReveal><div class="kpi__n">10+</div><div class="kpi__t">entregas por sprint</div></div>
+        <div class="kpi" appReveal><div class="kpi__n">99%</div><div class="kpi__t">foco em qualidade</div></div>
+        <div class="kpi" appReveal><div class="kpi__n">7</div><div class="kpi__t">dias para MVP*</div></div>
+      </div>
+
+      <p class="hint">*Depende do escopo.</p>
+    </div>
+
+    <aside class="hero__panel" appReveal>
+      <div class="panel panel--heroArt">
+        <img class="heroArt" src="assets/img/second.png" alt="Ilustração corporativa" loading="lazy" />
+      </div>
+    </aside>
+  </div>
+
+  <div class="divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+      <path d="M0,64 C240,120 480,0 720,48 C960,96 1200,16 1440,72 L1440,120 L0,120 Z"></path>
+    </svg>
+  </div>
+</section>
+
+<section class="section" id="servicos">
+  <div class="container">
+    <div class="head" appReveal>
+      <h2 class="h2">Serviços</h2>
+      <p class="sub">Escolha o objetivo — eu cuido da entrega técnica com padrão profissional.</p>
+    </div>
+
+    <div class="cards cards--3">
+      <article class="card" appReveal>
+        <div class="card__icon"><app-icon name="server"></app-icon></div>
+        <h3 class="card__title">Backend & APIs</h3>
+        <p class="card__text">Sistemas robustos e seguros para o seu negócio com a estrutura que conecta seu site, aplicativo ou sistema interno com segurança e estabilidade.</p>
+        <ul class="list"><li>Comunicação entre sistemas (REST • JSON/XML)</li><li>Segurança de dados (JWT • Spring Security)</li><li>Organização e escalabilidade (JPA/Hibernate)</li></ul>
+      </article>
+
+      <article class="card" appReveal>
+        <div class="card__icon"><app-icon name="plug"></app-icon></div>
+        <h3 class="card__title">Integrações</h3>
+        <p class="card__text">Integrações entre sistemas com rastreabilidade, retries e observabilidade.</p>
+        <ul class="list"><li>Webhooks</li><li>Jobs</li><li>Monitoramento</li></ul>
+      </article>
+
+      <article class="card" appReveal>
+        <div class="card__icon"><app-icon name="layout"></app-icon></div>
+        <h3 class="card__title">Sites & Landing Pages</h3>
+        <p class="card__text">Conectamos seus sistemas para que tudo funcione de forma automática.
+          Integramos ERPs, gateways de pagamento, APIs externas e sistemas internos com total controle e confiabilidade.</p>
+        <ul class="list"><li>Angular</li><li>SEO básico</li><li>Performance</li></ul>
+      </article>
+    </div>
+
+    <div class="banner" appReveal>
+      <div>
+        <h3 class="banner__title">Precisa de algo sob medida?</h3>
+        <p class="banner__text">Diagnóstico rápido + plano com entregas, prazos e estimativas claras.</p>
+      </div>
+      <a class="btn btn--primary" href="#contato"><app-icon name="spark"></app-icon> Falar agora</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="entregas">
+  <div class="container">
+    <div class="head" appReveal>
+      <h2 class="h2">O que você recebe</h2>
+      <p class="sub">Não é só código: é previsibilidade, qualidade e continuidade.</p>
+    </div>
+
+    <div class="split">
+      <div class="split__left" appReveal>
+        <div class="timeline">
+          <div class="tl"><div class="tl__dot"></div><div><div class="tl__t">Escopo claro</div><div class="tl__d">Critérios de aceite, roadmap e alinhamento.</div></div></div>
+          <div class="tl"><div class="tl__dot"></div><div><div class="tl__t">Documentação</div><div class="tl__d">Swagger + guia de deploy e variáveis.</div></div></div>
+          <div class="tl"><div class="tl__dot"></div><div><div class="tl__t">Qualidade</div><div class="tl__d">Padrões, logs, validação e testes quando necessário.</div></div></div>
+          <div class="tl"><div class="tl__dot"></div><div><div class="tl__t">Deploy</div><div class="tl__d">Publicação e acompanhamento inicial.</div></div></div>
+        </div>
+      </div>
+
+      <div class="split__right" appReveal>
+        <div class="photoCard">
+          <img class="photoCard__imgSvg" src="assets/img/enterprise.png" alt="Visual enterprise" loading="lazy" />
+
+        </div>
+
+        <div class="quote">
+          <div class="quote__txt">“Tecnologia boa é aquela que resolve hoje e permanece saudável amanhã.”</div>
+          <div class="quote__by">— Germano Consultancy</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="projetos">
+  <div class="container">
+    <div class="head" appReveal>
+      <h2 class="h2">Soluções</h2>
+    </div>
+
+    <div class="gallery">
+      <article class="work" appReveal>
+        <div class="work__svgWrap"><img class="work__svg" src="assets/img/processamento.png" alt="Projeto A" loading="lazy" /></div>
+        <div class="work__body">
+          <div class="work__desc">Regras, prioridades, auditoria e endpoints operacionais.</div>
+          <div class="work__tags"><span class="tagzinha">Spring</span><span class="tagzinha">SQL</span><span class="tagzinha">Scheduler</span></div>
+        </div>
+      </article>
+
+      <article class="work" appReveal>
+        <div class="work__svgWrap"><img class="work__svg" src="assets/img/Integracao.png" alt="Projeto B" loading="lazy" /></div>
+        <div class="work__body">
+          <div class="work__desc">Contratos versionados, retries e observabilidade.</div>
+          <div class="work__tags"><span class="tagzinha">REST</span><span class="tagzinha">Webhooks</span><span class="tagzinha">Logs</span></div>
+        </div>
+      </article>
+
+      <article class="work" appReveal>
+        <div class="work__svgWrap"><img class="work__svg" src="assets/img/leads.png" alt="Projeto C" loading="lazy" /></div>
+        <div class="work__body">
+          <div class="work__desc">Frontend Angular pronto pra consumir seu backend.</div>
+          <div class="work__tags"><span class="tagzinha">Angular</span><span class="tagzinha">CSS</span><span class="tagzinha">API</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section--alt" id="planos">
+  <div class="container">
+    <div class="head" appReveal>
+      <h2 class="h2">Planos</h2>
+      <p class="sub">Escolha o modelo de contratação que faz sentido.</p>
+    </div>
+
+    <div class="plans">
+      <article class="card plan" appReveal>
+        <div class="plan__top"><div class="plan__name">Projeto fechado</div><div class="plan__badge">Escopo</div></div>
+        <p class="card__text">Orçamento e prazo definidos.</p>
+        <ul class="list"><li>Marcos</li><li>Documentação</li><li>Handover</li></ul>
+        <a class="btn btn--primary btn--full" href="#contato"><app-icon name="spark"></app-icon> Solicitar</a>
+      </article>
+
+      <article class="card plan" appReveal>
+        <div class="plan__top"><div class="plan__name">Pacote mensal</div><div class="plan__badge plan__badge--ghost">Contínuo</div></div>
+        <p class="card__text">Evolução e manutenção.</p>
+        <ul class="list"><li>Backlog</li><li>Entregas</li><li>Suporte</li></ul>
+        <a class="btn btn--primary btn--full" href="#contato"><app-icon name="spark"></app-icon> Conversar</a>
+      </article>
+
+      <article class="card plan" appReveal>
+        <div class="plan__top"><div class="plan__name">Diagnóstico</div><div class="plan__badge">Rápido</div></div>
+        <p class="card__text">Plano objetivo para começar certo.</p>
+        <ul class="list"><li>Mapeamento</li><li>MVP</li><li>Roadmap</li></ul>
+        <a class="btn btn--primary btn--full" href="#contato"><app-icon name="spark"></app-icon> Quero</a>
+      </article>
+    </div>
+
+    <div class="stackbar" appReveal>
+      <div><div class="stackbar__t">Soluções que oferecemos</div><div class="stackbar__d">Sistemas personalizados. • Sites profissionais. • Automações e planilhas inteligentes. • Integrações entre sistemas. • APIs e plataformas escaláveis</div></div>
+      <a class="btn btn--ghost btn--sm" href="#contato"><app-icon name="message"></app-icon> Tirar dúvidas</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="contato">
+  <div class="container">
+    <div class="head" appReveal>
+      <h2 class="h2">Contato</h2>
+    </div>
+
+    <div class="contactGrid">
+      <form class="card form" (ngSubmit)="submit()" [formGroup]="form" appReveal>
+        <div class="form__head">
+          <h3 class="form__title">Solicitar orçamento</h3>
+          <p></p>
+        </div>
+
+        <div class="fields">
+          <label class="field"><span>Nome</span><input formControlName="name" placeholder="Seu nome" /></label>
+          <label class="field"><span>Email</span><input type="email" formControlName="email" placeholder="seuemail@exemplo.com" /></label>
+          <label class="field"><span>Empresa</span><input formControlName="company" placeholder="(opcional)" /></label>
+          <label class="field"><span>WhatsApp</span><input formControlName="whats" placeholder="(11) 99999-9999" /></label>
+          <label class="field field--full"><span>Mensagem</span><textarea rows="6" formControlName="message" placeholder="Contexto, prazo e objetivo..."></textarea></label>
+        </div>
+
+        <div class="form__actions">
+          <button class="btn btn--primary" type="submit" [disabled]="sending()">
+            <app-icon name="send"></app-icon>
+            {{ sending() ? 'Enviando...' : 'Enviar' }}
+          </button>
+          <a class="btn btn--ghost" [href]="waLink()" target="_blank" rel="noreferrer">
+            <app-icon name="whatsapp"></app-icon>
+            WhatsApp
+          </a>
+        </div>
+      </form>
+
+      <aside class="side" appReveal>
+        <div class="card side__card">
+          <h3 class="side__title"><span class="grad">Links</span></h3>
+          <div class="side__links">
+            <a class="slink" [href]="links.linkedin" target="_blank" rel="noreferrer"><app-icon name="linkedin"></app-icon> <span class="grad">LinkedIn</span></a>
+            <a class="slink" [href]="links.github" target="_blank" rel="noreferrer"><app-icon name="github"></app-icon><span class="grad">GitHub</span></a>
+            <a class="slink" href="mailto:contato@germanoconsultancy.com"><app-icon name="mail"></app-icon> <span class="grad">germanoconsultancy@gmail.com</span> <span class="muted"></span></a>
+            <a class="slink" href="https://germano-portfolio.netlify.app" target="_blank">🔎 <span class="grad">Portfólio técnico detalhado</span><span class="muted"></span></a>
+          </div>
+        </div>
+
+        <div class="card side__card">
+          <h3 class="side__title">Como eu trabalho</h3>
+          <ul class="list"><li>Escopo e aceite</li><li>Entregas incrementais</li><li>Documentação</li><li>Suporte pós‑deploy (opcional)</li></ul>
+        </div>
+
+        <div class="card side__card">
+          <h3 class="side__title">Stack</h3>
+          <div class="tags">
+            <span class="tag">Spring Boot</span><span class="tag">Angular</span><span class="tag">REST</span><span class="tag">PostgreSQL</span>
+            <span class="tag">JWT</span><span class="tag">Swagger</span><span class="tag">Git</span><span class="tag">CI/CD</span>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <span class="footer__mark"><img src="assets/img/logo.png" alt="Germano Consultancy" /></span>
+      <div><div class="footer__name">Germano Consultancy</div><div class="footer__small">Backend • Integrações • Automação • Sites</div></div>
+    </div>
+    <div class="footer__meta">
+      <div class="footer__small">© {{ year() }} • Todos os direitos reservados</div>
+    </div>
+  </div>
+</footer>
+
+<button class="totop" type="button" [class.is-visible]="toTopVisible()" aria-label="Voltar ao topo" (click)="toTop()">
+  <app-icon name="up"></app-icon>
+</button>

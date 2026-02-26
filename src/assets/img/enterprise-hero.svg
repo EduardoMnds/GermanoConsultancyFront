@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#e11d2e" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#ffb703" stop-opacity=".65"/>
+    </linearGradient>
+    <radialGradient id="r1" cx="30%" cy="20%" r="70%">
+      <stop offset="0" stop-color="#e11d2e" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#0b0b11" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="r2" cx="80%" cy="30%" r="70%">
+      <stop offset="0" stop-color="#ffb703" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#0b0b11" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="720" fill="#0b0b11"/>
+  <rect width="1200" height="720" fill="url(#r1)"/>
+  <rect width="1200" height="720" fill="url(#r2)"/>
+
+  <g opacity=".22" stroke="#ffffff" stroke-opacity=".25" stroke-width="1">
+    <path d="M60 80H1140M60 140H1140M60 200H1140M60 260H1140M60 320H1140M60 380H1140M60 440H1140M60 500H1140M60 560H1140M60 620H1140"/>
+    <path d="M120 60V660M200 60V660M280 60V660M360 60V660M440 60V660M520 60V660M600 60V660M680 60V660M760 60V660M840 60V660M920 60V660M1000 60V660M1080 60V660"/>
+  </g>
+
+  <g opacity=".95">
+    <rect x="120" y="130" width="420" height="240" rx="26" fill="#ffffff" fill-opacity=".06" stroke="#ffffff" stroke-opacity=".18"/>
+    <rect x="560" y="200" width="520" height="300" rx="26" fill="#ffffff" fill-opacity=".05" stroke="#ffffff" stroke-opacity=".14"/>
+    <rect x="220" y="410" width="420" height="180" rx="26" fill="#ffffff" fill-opacity=".04" stroke="#ffffff" stroke-opacity=".14"/>
+  </g>
+
+  <path d="M160 170H500" stroke="url(#g1)" stroke-width="10" stroke-linecap="round" opacity=".9"/>
+  <path d="M620 250H1040" stroke="url(#g1)" stroke-width="10" stroke-linecap="round" opacity=".75"/>
+
+  <g fill="url(#g1)" opacity=".9">
+    <circle cx="160" cy="170" r="10"/>
+    <circle cx="500" cy="170" r="10"/>
+    <circle cx="620" cy="250" r="10"/>
+    <circle cx="1040" cy="250" r="10"/>
+  </g>
+
+  <g font-family="Inter, Arial" font-size="18" fill="#ffffff" fill-opacity=".8">
+    <text x="160" y="215">Arquitetura • APIs • Integrações</text>
+    <text x="620" y="295">Observabilidade • Segurança • Deploy</text>
+  </g>
+</svg>
